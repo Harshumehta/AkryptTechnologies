@@ -1,0 +1,7 @@
+#Maindiv{
+    display: flex;
+    justify-content: space-around;
+}
+#content{
+    color: blue
+}
