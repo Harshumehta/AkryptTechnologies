@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/603b03e915.js" crossorigin="anonymous"></script>
+    <style>
+        /* navigation bar */
+        #maindiv1{
+            height:100px;   
+            width:100%;
+            display: flex;
+           
+        }
+        #blog{
+            width:85%;
+            height: 100%;
+           
+            margin-left: 80px;
+        }
+        #butt{
+            width: 15%;
+            height: 100%;
+            margin-left: 30px;
+        }
+        #but{
+            width:90px;
+            padding: 10px;
+            color: white;
+            background-color: rgb(112, 204, 20);
+            border-radius: 5px;
+            margin-top: 20px;
+            border: none;
+        }
+        #maindiv2{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 600px;
+           
+        }
+        .div2{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            width: 350px;
+            height:500px;
+           margin-left: 24px;
+          
+        }
+        .img{
+            margin-left: 10px;
+            width: 95%;
+            margin-top: 10px;
+           border-top-left-radius: 7px;
+           border-top-right-radius: 7px;
+         
+        }
+        .divv{
+            margin-top: 10px;
+        }
+        .icnf{
+            width: 100%;
+            height: 20px;
+            display: flex;
+            margin-left: 10px;
+            color: gray;
+        }
+        #icon{
+           
+          font-size: 20px;
+          margin-top: 10px;
+        }
+        #icon2{
+          font-size: 20px;
+          margin-top: 10px;
+          margin-left: 15px;
+        }
+        .p1{
+            margin-left: 5px;
+        }
+        .p2{
+            margin-left: 5px;
+        }
+        .h1{
+            margin-left: 10px;
+        }
+        .p3{
+            font-size:20px;
+            color: gray;
+            margin-left: 10px;
+        }
+        .div3{
+            width: 350px;
+            height: 500px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        .div4{
+            width: 350px;
+            height: 500px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        #online{
+            background-color:rgb(244, 181, 7);
+            width: 1050px;
+            height: 450px;
+            border: 1px solid black;
+            margin-left: 90px;
+            border-radius: 30px;
+            display: flex;
+            border: none;
+        }
+        .apple{
+            height: 100%;
+            width: 40%;
+            margin-left: 60px;
+        }
+        #h3{
+            margin-left: 70px;
+            font-size: 30px;
+            position: relative;
+            top: 70px;
+        }
+        #h2{
+            margin-left: 70px;
+            font-size: 30px;
+            position: relative;
+            top: 40px;
+        }
+        #p1{
+            margin-left: 70px;
+            color: gray;
+            font-size: 18px;
+            margin-top:60px;
+        }
+        #btn{
+              margin-left: 70px;
+              padding: 20px;
+              width: 180px;
+              height: 60px;
+              border-radius: 6px;
+              background-color: black;
+              display: flex;
+        }
+        #iicon{
+            color: white;
+            font-size: 45px;
+           position: relative;
+           right: 12px;
+           bottom: 15px;
+        }
+        #p4{
+            color: white;
+            position: relative;
+            bottom: 22px;
+        }
+        #he3{
+            color: white;
+            font-size: 20px;
+            position: relative;
+            bottom: 45px;
+        }
+        #btn2{
+              margin-left: 70px;
+              padding: 20px;
+              width: 200px;
+              height: 60px;
+              border-radius: 6px;
+              background-color: black;
+              display: flex;
+              margin-top: 10px;
+        }
+        #iicon2{
+            font-size: 35px;
+           color: white;
+           position: relative;
+           right: 12px;
+           bottom: 9px;
+        }
+        #p5{
+            color: white;
+            position: relative;
+            bottom: 22px;
+            left: 5px;
+        }
+        #he4{
+            color: white;
+            font-size: 20px;
+            position: relative;
+            bottom: 45px;
+            left: 5px;
+        }
+        #bkimg{
+            width:60%;
+        }
+        #img{
+           width: 70%;
+           margin-top: 50px;
+           margin-left: 20px;
+        }
+        #div5{
+            width: 1600px;
+            height: 500px;
+            border: 1px solid black;
+            display: grid;
+           
+        }
+        .head{
+            margin-top: 90px;
+            margin-left: 70px;
+        }
+        #btndiv{
+            column-gap: 14px;
+            row-gap: 20px;
+        }
+       
+        #bttn{
+            color: gray;
+            background-color: rgba(255, 235, 205, 0.635);
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            height: 35px;
+            margin-left: 70px;
+            font-size: large;
+          
+        }
+        #bttn2{
+            color: gray;
+            background-color: rgba(255, 235, 205, 0.635);
+            border: none;
+            border-radius: 5px;
+            width: 250px;
+            height: 35px;
+            font-size: large;
+        }
+        #bttn3{
+            color: gray;
+            background-color: rgba(255, 235, 205, 0.635);
+            border: none;
+            border-radius: 5px;
+            width: 180px;
+            height: 35px;
+            font-size: large;
+        }
+        #bttn4{
+            color: gray;
+            background-color: rgba(255, 235, 205, 0.635);
+            border: none;
+            border-radius: 5px;
+            width: 220px;
+            height: 35px;
+            font-size: large;
+        }
+        #bttn5{
+            color: gray;
+            background-color: rgba(255, 235, 205, 0.635);
+            border: none;
+            border-radius: 5px;
+            width: 220px;
+            height: 35px;
+            font-size: large;
+        }
+        #btndiv2{
+            row-gap: 8px;
+            column-gap: 10px;
+        }
+        #bttn6{
+            color: gray;
+            background-color: rgba(255, 235, 205, 0.635);
+            border: none;
+            border-radius: 5px;
+            width: 300px;
+            height: 35px;
+            font-size: large;
+            margin-left:70px;
+        }
+        #bttn7{
+            color: gray;
+            background-color: rgba(255, 235, 205, 0.635);
+            border: none;
+            border-radius: 5px;
+            width: 220px;
+            height: 35px;
+            font-size: large;
+        }
+        #bttn8{
+            color: gray;
+            background-color: rgba(255, 235, 205, 0.635);
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            height: 35px;
+            font-size: large;
+        }
+        #bttn9{
+            color: gray;
+            background-color: rgba(255, 235, 205, 0.635);
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            height: 35px;
+            font-size: large;
+        }
+        #bttn0{
+            color: gray;
+            background-color: rgba(255, 235, 205, 0.635);
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            height: 35px;
+            font-size: large;
+        }
+
+        #maindiv5{
+           width: 100%;
+           height: 220px;
+           display: flex;
+           justify-content:space-around;
+           
+        }
+        .div51{
+           height: 100%;
+           width: 12%;
+          border: 1px solid gray;
+          border-radius: 6px;
+        }
+         #icoon{
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 20px;
+         }
+         .free{
+            margin-left: 8px;
+         }
+         .par{
+            color: gray;
+         }
+         #icoon2{
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 20px;
+         }
+         #icoon3{
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 20px;
+         }
+         #icoon4{
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 20px;
+         }
+         #icoon5{
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 20px;
+         }
+         #maindiv6{
+            width: 100%;
+            height: 230px;
+            display: flex;
+           
+         }
+         #imaag{
+            text-align: center;
+            width: 15%;
+            height: 100%;
+            
+            margin-top: 110px;
+            
+            margin-left: 40px;
+         }
+         #icons{
+            width: 100%;
+           margin-top: 15px;
+           
+            
+         }
+         .btnn{
+            background-color: white;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+         }
+         .btnn:hover{
+            background-color: rgb(209, 202, 202);
+         }
+         #fdiv{
+            width: 75%;
+            height: 100%;
+            
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-around;
+         }
+         #flexdiv{
+            margin-left: 30px;
+            width: 110px;
+            
+         }
+         #flexdiv2{
+            width: 120px;
+            
+         }
+         #flexdiv3{
+            width: 140px;
+            
+         }
+         #flexdiv4{
+            width: 220px;
+            
+         }
+         #inp{
+            display: flex;
+         }
+         #input{
+           width: 120px;
+           height: 20px;
+         }
+         #iput{
+            background-color: black;
+            color: white;
+            width: 70px;
+         }
+         #lastdiv{
+            margin-top: 120px;
+            margin-left: 20px;
+            width: 100%;
+            height: 40px;
+            border: 1px solid black;
+            display: flex;
+            font-size: large;
+            color: gray;
+         }
+         #html{
+            margin-left: 60px;
+            width: 50%;
+         }
+         #organic{
+            margin-left: 20px;
+             width: 50%;
+         }
+    </style>
+</head>
+<body>
+    <div id="maindiv1">
+        <div id="blog">
+            <h1>Our Recent Blog</h1>
+        </div>
+        <div id="butt">
+            <button id="but">View All</button>
+        </div>
+    </div>
+
+    <div id="maindiv2">
+        <div class="div2">
+            <div>
+                <img class="img" src="https://themewagon.github.io/organic/images/post-thumbnail-1.jpg" alt="">
+            </div>
+            <div class="divv">
+                <div class="icnf">
+                    <i id="icon" class="fa-regular fa-calendar-minus"></i>
+                    <p class="p1">22 AUG 2021</p>
+                    <i id="icon2" class="fa-regular fa-file"></i>
+                    <p class="p2">TIPS & TRICKS</p>
+                </div>
+                <h1 class="h1">Top 10 casual look ideas to dress up your kids</h1>
+                <p class="p3">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+            </div>
+        </div>
+        <div>
+            <div class="div3">
+                <div>
+                    <img class="img" src="https://themewagon.github.io/organic/images/post-thumbnail-2.jpg" alt="">
+                </div>
+                <div class="divv" >
+                    <div class="icnf">
+                        <i id="icon" class="fa-regular fa-calendar-minus"></i>
+                        <p class="p1">25 AUG 2021</p>
+                        <i id="icon2" class="fa-regular fa-file"></i>
+                        <p class="p2">TRENDING</p>
+                    </div>
+                    <h1 class="h1">Latest trends of wearing street wears supremely</h1>
+                    <p class="p3">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="div4">
+                <div>
+                    <img class="img" src="https://themewagon.github.io/organic/images/post-thumbnail-3.jpg" alt="">
+                </div>
+                <div class="divv">
+                    <div class="icnf">
+                        <i id="icon" class="fa-regular fa-calendar-minus"></i>
+                        <p class="p1">28 AUG 2021</p>
+                        <i id="icon2" class="fa-regular fa-file"></i>
+                        <p class="p2">INSPIRATION</p>
+                    </div>
+                    <h1 class="h1">10 Different types of comfortable clothes ideas for women</h1>
+                    <p class="p3">Lorem  ipsum  dolor  sit  amet,  consectetur  adipi  elit. Aliquet  eleifend  viverra  enim  tincidunt  donec  quam. A  in  arcu,  hendrerit  neque  dolor  morbi...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- download organic app -->
+   <div  id="online">
+    <div class="apple">
+       <h3 id="h3">Download Organic </h3>
+       <h3 id="h2">App</h3>
+       <p id="p1">Online Orders made easy,fast and reliable</p>
+
+       <button  id="btn" >
+          <div>
+            <i id="iicon" class="fa-brands fa-apple"></i>
+          </div>
+         <div >
+            <p id="p4">Download on the</p>
+            <h3 id="he3">App Store</h3>
+         </div>
+       </button>
+
+       <button  id="btn2" >
+          <div>
+            <i id="iicon2" class="fa-brands fa-google-play"></i>
+          </div>
+         <div >
+            <p id="p5">Get It On</p>
+            <h3 id="he4">Google Play</h3>
+         </div>
+       </button>
+    </div>
+    <div id="bkimg">
+        <img id="img" src="https://themewagon.github.io/organic/images/banner-onlineapp.png" alt="">
+    </div>
+   </div>
+
+   <!-- people  -->
+    <div id="div5">
+        <h1 class="head">People are also looking for</h3>
+        <div id="btndiv">
+            <div id="btndiv">
+               <button id="bttn">Blue diamon almonds</button>
+               <button id="bttn2">Angle's Boomchickapop Corn</button>
+               <button id="bttn3">Salty Kettle Corn</button>
+               <button id="bttn4">Chobani Greek Yogurt</button>
+               <button id="bttn5">Sweet Vanilla Yogurt</button>
+            </div>
+           <div id="btndiv2">
+              <button id="bttn6">Foster Farms Takeout Crispy wings</button>
+              <button id="bttn7">Warrior Blend Organic</button>
+              <button id="bttn8">Chao Cheese Creamy</button>
+              <button id="bttn9">Chicken meatballs</button>
+              <button id="bttn0">Blue diamon almonds</button>
+           </div>
+        </div>
+        <div></div>
+    </div>
+
+
+    <div id="maindiv5">
+        <div class="div51">
+            <i id="icoon" class="fa-solid fa-cube"></i>
+           <div class="free">
+            <h2>Free delivery</h2>
+            <p  class="par">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+           </div>
+        </div>
+       
+            <div class="div51">
+                <i id="icoon2" class="fa-solid fa-bag-shopping"></i>
+               <div class="free">
+                <h2>100% secure payment</h2>
+                <p class="par">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+               </div>
+            </div>
+
+       
+            <div class="div51">
+                <i id="icoon3" class="fa-solid fa-star"></i>
+               <div class="free">
+                <h2>Quality guarantee</h2>
+                <p class="par">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+               </div>
+            </div>
+       
+        
+            <div class="div51">
+                <i id="icoon4" class="fa-solid fa-certificate"></i>
+               <div class="free">
+                <h2>guaranteed savings</h2>
+                <p class="par">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+               </div>
+            </div>
+        
+        
+            <div class="div51">
+                <i id="icoon5" class="fa-solid fa-gift"></i>
+               <div class="free">
+                <h2>Daily offers</h2>
+                <p class="par">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+               </div>
+            </div>
+        >
+     </div>
+       
+     <div id="maindiv6">
+        <div id="imaag">
+            
+            <img src="https://themewagon.github.io/organic/images/logo.svg" alt="">
+            
+            <div id="icons">
+               <button class="btnn"><i class="fa-brands fa-facebook-f"></i></button>
+               <button class="btnn"><i class="fa-brands fa-twitter"></i></button>
+               <button class="btnn"><i class="fa-brands fa-youtube"></i></button>
+               <button class="btnn"><i class="fa-brands fa-instagram"></i></button>
+               <button class="btnn"><i class="fa-brands fa-amazon"></i></button>
+            </div>
+            
+        </div>
+        <div id="fdiv">
+         <div id="flexdiv">
+            <h1>Organic</h1>
+            <p class="par">About us Conditions Our Journals Careers Affiliate Programme Ultras Press</p>
+         </div>
+         <div id="flexdiv2">
+            <h1>Quick Links</h1>
+            <p class="par">Offers Discount Coupons Stores Track Order Shop Info</p>
+         </div>
+         <div id="flexdiv3">
+            <h1>Customer Service</h1>
+            <p class="par">FAQ Contact Privacy Policy Returns & Refunds Cookie Guidelines Delivery Information</p>
+         </div>
+         <div id="flexdiv4">
+            <h1>Subscribe Us</h1>
+            <p class="par">Subscribe to our newsletter to get updates about our grand offers.</p>
+           <div id="inp">
+            <input id="input" type="text">
+            <button id="iput">subscribe</button>
+           </div>
+         </div>
+        </div>
+      </div>
+
+      <div id="lastdiv">
+          <div id="organic">
+            <p>© 2024 Organic. All rights reserved.</p>
+          </div>
+          <div id="html">
+            <p>HTML Template by TemplatesJungle Distributed By ThemeWagon</p>
+          </div>
+      </div>
+
+</body>
+</html>
